@@ -69,7 +69,7 @@ class Dashboard2 extends Component {
     if (reactLocalStorage.get("accessToken") && reactLocalStorage.get("API_Key")) {
       axios
         .get(
-          `http://localhost:5000/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
+          `https://qcalpha-dashboard-2.herokuapp.com/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
                                         API_Key=${reactLocalStorage.get("API_Key")}`
         )
         .then((res) => {
@@ -119,7 +119,7 @@ class Dashboard2 extends Component {
     if (reactLocalStorage.get("accessToken") && reactLocalStorage.get("API_Key")) {
       axios
         .get(
-          `http://localhost:5000/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
+          `https://qcalpha-dashboard-2.herokuapp.com/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
                                         API_Key=${reactLocalStorage.get("API_Key")}`
         )
         .then((res) => {
@@ -158,7 +158,7 @@ class Dashboard2 extends Component {
     if (reactLocalStorage.get("accessToken") && reactLocalStorage.get("API_Key")) {
       axios
         .get(
-          `http://localhost:5000/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
+          `https://qcalpha-dashboard-2.herokuapp.com/expiry?accessToken=${reactLocalStorage.get("accessToken")}&
                                         API_Key=${reactLocalStorage.get("API_Key")}`
         )
         .then((res) => {
@@ -978,7 +978,7 @@ class Dashboard2 extends Component {
         });
         if (reactLocalStorage.get("accessToken") && reactLocalStorage.get("API_Key")) {
           axios
-            .get("http://localhost:5000/strategies",
+            .get("https://qcalpha-dashboard-2.herokuapp.com/strategies",
                   { params: { ticker: this.state.tickerValue,
                               expiry: this.state.expiryValue,
                               strikeDistance: this.state.strikeDistanceValue,
